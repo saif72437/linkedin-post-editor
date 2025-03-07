@@ -1,0 +1,150 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn-tool {
+    @apply flex items-center gap-2 px-4 py-2 rounded-lg bg-gray-800 border border-gray-700 
+           text-gray-200 hover:bg-gray-700 hover:border-gray-600 transition-all
+           shadow-sm active:scale-95;
+  }
+  
+  .btn-preview {
+    @apply flex items-center gap-2 px-4 py-2 rounded-lg border border-gray-700
+           hover:border-gray-600 transition-all shadow-sm;
+  }
+}
+
+.light-beam {
+  @apply absolute w-[500px] h-[500px] rounded-full bg-purple-500/20 blur-[120px] -z-10;
+}
+
+/* Quill Editor Font Families */
+.ql-snow .ql-picker.ql-font .ql-picker-label[data-value="Poppins"]::before,
+.ql-snow .ql-picker.ql-font .ql-picker-item[data-value="Poppins"]::before {
+  content: 'Poppins';
+  font-family: 'Poppins', sans-serif;
+}
+
+.ql-snow .ql-picker.ql-font .ql-picker-label[data-value="Roboto"]::before,
+.ql-snow .ql-picker.ql-font .ql-picker-item[data-value="Roboto"]::before {
+  content: 'Roboto';
+  font-family: 'Roboto', sans-serif;
+}
+
+.ql-snow .ql-picker.ql-font .ql-picker-label[data-value="Montserrat"]::before,
+.ql-snow .ql-picker.ql-font .ql-picker-item[data-value="Montserrat"]::before {
+  content: 'Montserrat';
+  font-family: 'Montserrat', sans-serif;
+}
+
+.ql-snow .ql-picker.ql-font .ql-picker-label[data-value="Inter"]::before,
+.ql-snow .ql-picker.ql-font .ql-picker-item[data-value="Inter"]::before {
+  content: 'Inter';
+  font-family: 'Inter', sans-serif;
+}
+
+.ql-snow .ql-picker.ql-font .ql-picker-label[data-value="Fira-Code"]::before,
+.ql-snow .ql-picker.ql-font .ql-picker-item[data-value="Fira-Code"]::before {
+  content: 'Fira Code';
+  font-family: 'Fira Code', monospace;
+}
+
+.ql-snow .ql-picker.ql-font .ql-picker-label[data-value="Source-Sans-Pro"]::before,
+.ql-snow .ql-picker.ql-font .ql-picker-item[data-value="Source-Sans-Pro"]::before {
+  content: 'Source Sans Pro';
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* Font Classes */
+.ql-font-Poppins {
+  font-family: 'Poppins', sans-serif !important;
+}
+
+.ql-font-Roboto {
+  font-family: 'Roboto', sans-serif !important;
+}
+
+.ql-font-Montserrat {
+  font-family: 'Montserrat', sans-serif !important;
+}
+
+.ql-font-Inter {
+  font-family: 'Inter', sans-serif !important;
+}
+
+.ql-font-Fira-Code {
+  font-family: 'Fira Code', monospace !important;
+}
+
+.ql-font-Source-Sans-Pro {
+  font-family: 'Source Sans Pro', sans-serif !important;
+}
+
+.ql-font-Arial {
+  font-family: Arial, sans-serif !important;
+}
+
+.ql-font-Times-New-Roman {
+  font-family: 'Times New Roman', serif !important;
+}
+
+.ql-font-Georgia {
+  font-family: Georgia, serif !important;
+}
+
+.ql-font-Courier-New {
+  font-family: 'Courier New', monospace !important;
+}
+
+.ql-container {
+  @apply !font-poppins !bg-gray-900 !text-gray-200;
+}
+
+.ql-toolbar {
+  @apply !border-gray-700 !rounded-t-lg !bg-gray-800 !text-gray-200;
+}
+
+.ql-container {
+  @apply !border-gray-700 !rounded-b-lg;
+}
+
+.ql-editor {
+  @apply !prose prose-invert max-w-none;
+}
+
+.ql-snow .ql-stroke {
+  @apply !stroke-gray-200;
+}
+
+.ql-snow .ql-fill {
+  @apply !fill-gray-200;
+}
+
+.ql-snow .ql-picker {
+  @apply !text-gray-200;
+}
+
+.ql-snow .ql-picker-options {
+  @apply !bg-gray-800 !border-gray-700;
+}
+
+.prose {
+  @apply max-w-none;
+}
+
+.prose p {
+  @apply mb-4 text-gray-200;
+}
+
+.prose ul {
+  @apply list-disc pl-6 mb-4 text-gray-200;
+}
+
+.prose ol {
+  @apply list-decimal pl-6 mb-4 text-gray-200;
+}
+
+.ql-editor strong {
+  color: white !important;
+}
